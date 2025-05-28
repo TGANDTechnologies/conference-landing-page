@@ -1,0 +1,10 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <g transform="translate(100, 50)">
+    <circle cx="0" cy="0" r="20" fill="#0ea5e9" opacity="0.1"/>
+    <path d="M-8 -2 L8 -2 L8 2 L-8 2 Z M-2 -8 L2 -8 L2 8 L-2 8 Z" fill="#0ea5e9"/>
+  </g>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">
+    Johns Hopkins Medicine
+  </text>
+</svg> 

@@ -1,0 +1,11 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <g transform="translate(100, 50)">
+    <circle cx="0" cy="0" r="20" fill="#3b82f6" opacity="0.1"/>
+    <path d="M-6 -10 Q0 -15 6 -10 Q6 -5 0 0 Q-6 -5 -6 -10 Z" fill="#3b82f6"/>
+    <circle cx="0" cy="5" r="3" fill="#3b82f6"/>
+  </g>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">
+    Mayo Clinic
+  </text>
+</svg> 

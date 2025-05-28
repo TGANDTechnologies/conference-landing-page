@@ -1,0 +1,11 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <g transform="translate(100, 50)">
+    <circle cx="0" cy="0" r="20" fill="#10b981" opacity="0.1"/>
+    <path d="M-8 -8 L8 -8 L8 8 L-8 8 Z" fill="none" stroke="#10b981" stroke-width="2"/>
+    <path d="M-4 -4 L4 -4 L4 -2 L-4 -2 Z M-2 -6 L2 -6 L2 2 L-2 2 Z" fill="#10b981"/>
+  </g>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">
+    Stanford Medicine
+  </text>
+</svg> 
