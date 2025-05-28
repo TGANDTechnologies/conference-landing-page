@@ -2,6 +2,15 @@
   "name": "medical-conference-landing",
   "version": "1.0.0",
   "private": true,
+  "description": "Modern medical conference landing page built with Next.js 14, TypeScript, and Tailwind CSS",
+  "homepage": "https://conference-landing-page-seven.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eslamsamyx/conference-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eslamsamyx/conference-landing-page/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

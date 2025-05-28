@@ -4,11 +4,20 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-brightgreen)](https://conference-landing-page-seven.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Eslamsamyx/conference-landing-page)
 
+> **🚀 [LIVE DEMO](https://conference-landing-page-seven.vercel.app)** - View the deployed application
+
 A modern, responsive medical conference landing page built with Next.js 14, TypeScript, and Tailwind CSS. Features smooth animations, interactive components, and a professional design optimized for medical conferences and events.
 
 ## 🌟 Live Demo
 
 **🚀 [View Live Application](https://conference-landing-page-seven.vercel.app)**
+
+Experience the full MedConnect 2025 conference landing page with:
+- Interactive registration form
+- Responsive design across all devices  
+- Smooth animations and transitions
+- Professional medical conference branding
+- Complete speaker profiles and schedule
 
 ## ✨ Features
 

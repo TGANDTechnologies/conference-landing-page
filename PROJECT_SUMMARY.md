@@ -2,14 +2,16 @@
 
 ## 🎉 Successfully Deployed Medical Conference Landing Page
 
+> **🚀 [LIVE DEMO: https://conference-landing-page-seven.vercel.app](https://conference-landing-page-seven.vercel.app)**
+
 ### 📍 Live URLs
-- **Primary Production URL**: https://conference-landing-page-seven.vercel.app
-- **GitHub Repository**: https://github.com/Eslamsamyx/conference-landing-page
-- **Vercel Project Dashboard**: https://vercel.com/eslams-projects-65f31d20/conference-landing-page
+- **🌟 Primary Production URL**: https://conference-landing-page-seven.vercel.app
+- **📂 GitHub Repository**: https://github.com/Eslamsamyx/conference-landing-page
+- **⚙️ Vercel Project Dashboard**: https://vercel.com/eslams-projects-65f31d20/conference-landing-page
 
 ### 🚀 Deployment Status
 ✅ **GitHub Repository**: Successfully created and configured  
-✅ **Vercel Deployment**: Live and accessible  
+✅ **Vercel Deployment**: Live and accessible at [conference-landing-page-seven.vercel.app](https://conference-landing-page-seven.vercel.app)  
 ✅ **CI/CD Pipeline**: GitHub Actions workflows configured  
 ✅ **Documentation**: Comprehensive README and guides created  
 ✅ **Git Integration**: Vercel connected to GitHub for auto-deployments  
