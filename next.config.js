@@ -20,6 +20,13 @@ const nextConfig = {
   compress: true,
   // Power optimizations
   poweredByHeader: false,
+  // Modern browser targeting
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  // Target modern browsers to reduce polyfills
+  target: 'server',
 }
 
 module.exports = nextConfig 
