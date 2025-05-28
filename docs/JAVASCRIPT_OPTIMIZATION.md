@@ -39,24 +39,21 @@ const Schedule = dynamic(() => import('@/components/Schedule'), {
 - Better user experience with loading states
 
 ### 2. Modern Browser Targeting
-**Implementation**: Added browserslist configuration for modern browsers
-```bash
-# .browserslistrc
-> 0.5%
-last 2 versions
-not dead
-not ie 11
-not op_mini all
-Chrome >= 91
-Firefox >= 90
-Safari >= 14
-Edge >= 91
+**Implementation**: Using Next.js default browser targeting
+```javascript
+// No custom browserslist configuration needed
+// Next.js 14 defaults to modern browsers:
+// - Chrome >= 64
+// - Firefox >= 67  
+// - Safari >= 12
+// - Edge >= 79
 ```
 
 **Benefits**:
 - Reduces polyfills for modern browsers
 - Smaller bundle size
 - Faster execution with native ES6+ features
+- No configuration conflicts
 
 ### 3. SWC Compiler Optimizations
 **Implementation**: Enhanced Next.js configuration
@@ -149,18 +146,21 @@ Optimized for modern browsers while maintaining compatibility:
 ### Vercel Build Error: BrowserslistError
 **Issue**: `BrowserslistError: contains both .browserslistrc and package.json with browsers`
 
-**Solution**: Use only one browserslist configuration method:
+**Solution**: Use Next.js default browser targeting (recommended)
 ```bash
-# Option 1: Use .browserslistrc file (recommended)
-# Create .browserslistrc with browser targets
-# Remove "browserslist" from package.json
-
-# Option 2: Use package.json only
-# Remove .browserslistrc file
-# Keep "browserslist" array in package.json
+# Remove any browserslist configuration:
+# - Delete .browserslistrc file
+# - Remove "browserslist" from package.json
+# - Let Next.js use its optimized defaults
 ```
 
-**Resolution**: We chose Option 1 (.browserslistrc file) for better separation of concerns.
+**Benefits of Next.js Defaults**:
+- No configuration conflicts
+- Automatically optimized for modern browsers
+- Maintained by Next.js team
+- Chrome >= 64, Firefox >= 67, Safari >= 12, Edge >= 79
+
+**Resolution**: We removed all browserslist configuration to use Next.js defaults.
 
 ## Monitoring and Validation
 
