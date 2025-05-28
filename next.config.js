@@ -10,6 +10,16 @@ const nextConfig = {
       },
     ],
   },
+  // Performance optimizations
+  experimental: {
+    optimizePackageImports: ['@heroicons/react', 'lucide-react'],
+  },
+  // Font optimization
+  optimizeFonts: true,
+  // Compression
+  compress: true,
+  // Power optimizations
+  poweredByHeader: false,
 }
 
 module.exports = nextConfig 
