@@ -40,17 +40,17 @@ const Schedule = dynamic(() => import('@/components/Schedule'), {
 
 ### 2. Modern Browser Targeting
 **Implementation**: Added browserslist configuration for modern browsers
-```json
-"browserslist": [
-  "> 0.5%",
-  "last 2 versions", 
-  "not dead",
-  "not ie 11",
-  "Chrome >= 91",
-  "Firefox >= 90", 
-  "Safari >= 14",
-  "Edge >= 91"
-]
+```bash
+# .browserslistrc
+> 0.5%
+last 2 versions
+not dead
+not ie 11
+not op_mini all
+Chrome >= 91
+Firefox >= 90
+Safari >= 14
+Edge >= 91
 ```
 
 **Benefits**:
@@ -143,6 +143,24 @@ Optimized for modern browsers while maintaining compatibility:
 - Firefox 90+
 - Safari 14+
 - Edge 91+
+
+## Troubleshooting
+
+### Vercel Build Error: BrowserslistError
+**Issue**: `BrowserslistError: contains both .browserslistrc and package.json with browsers`
+
+**Solution**: Use only one browserslist configuration method:
+```bash
+# Option 1: Use .browserslistrc file (recommended)
+# Create .browserslistrc with browser targets
+# Remove "browserslist" from package.json
+
+# Option 2: Use package.json only
+# Remove .browserslistrc file
+# Keep "browserslist" array in package.json
+```
+
+**Resolution**: We chose Option 1 (.browserslistrc file) for better separation of concerns.
 
 ## Monitoring and Validation
 
