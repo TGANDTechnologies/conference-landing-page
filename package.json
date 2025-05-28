@@ -11,16 +11,6 @@
   "bugs": {
     "url": "https://github.com/Eslamsamyx/conference-landing-page/issues"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11",
-    "Chrome >= 91",
-    "Firefox >= 90",
-    "Safari >= 14",
-    "Edge >= 91"
-  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
