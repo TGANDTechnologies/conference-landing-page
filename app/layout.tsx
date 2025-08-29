@@ -9,7 +9,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'MedConnect 2025 - International Medical Conference',
+  title: 'UBMes MedConnect 2025 - International Medical Conference',
   description: 'Join leading medical professionals at MedConnect 2025. Discover breakthrough research, network with experts, and advance your medical career.',
   keywords: 'medical conference, healthcare, doctors, medical research, CME credits',
   icons: {
