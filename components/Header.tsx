@@ -78,18 +78,77 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <motion.a
-            href="#registration"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`hidden md:inline-flex items-center px-6 py-2 font-semibold rounded-full transition-all duration-300 ${
-              isScrolled
-                ? 'bg-medical-600 text-white hover:bg-medical-700'
-                : 'bg-white/20 text-white border border-white/30 backdrop-blur-sm hover:bg-white hover:text-medical-600'
-            }`}
-          >
-            Register Now
-          </motion.a>
+          <noscript>
+  <a href="https://www.ubmeevents.com/event/be43fcdc-64f4-4743-901c-3a3ee7bfde3a?embed=true" target="_blank" rel="noopener noreferrer">Buy Tickets</a>
+</noscript>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <button
+    onClick={() => {
+      const popup = document.getElementById('popup');
+      if (popup) popup.style.display = 'flex';
+    }}
+        className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-medical-600 transition-all duration-300"
+
+  >
+    Buy Tickets
+  </button>
+</div>
+<div
+  id="popup"
+  style={{
+    display: 'none',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+  }}
+  onClick={e => {
+    if (e.target === e.currentTarget) {
+      (e.currentTarget as HTMLDivElement).style.display = 'none';
+    }
+  }}
+>
+  <div
+    style={{
+      position: 'relative',
+      background: '#fff',
+      width: '100%',
+      maxWidth: '850px',
+      zIndex: 10000,
+    }}
+  >
+    <button
+      style={{
+        position: 'absolute',
+        top: 7,
+        right: 7,
+        backgroundColor: 'rgba(248, 247, 250, 0.65)',
+        borderRadius: '50%',
+        border: 'none',
+        cursor: 'pointer',
+        height: '40px',
+        width: '40px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      onClick={e => {
+        (e.currentTarget.closest('#popup') as HTMLDivElement).style.display = 'none';
+      }}
+    >
+      ✕
+    </button>
+    <iframe
+      src="https://www.ubmeevents.com/event/be43fcdc-64f4-4743-901c-3a3ee7bfde3a?embed=true"
+      style={{ width: '100%', height: '600px', border: 'none' }}
+    ></iframe>
+  </div>
+</div>
 
           {/* Mobile Menu Button */}
           <button

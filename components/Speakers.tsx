@@ -189,26 +189,79 @@ const Speakers = () => {
               These world-renowned experts rarely speak at the same event. 
               This is your chance to learn from the best in medicine.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                type="button"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white text-medical-600 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-              >
-                Secure Your Spot
-              </motion.button>
-              <motion.button
-                type="button"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-medical-600 transition-colors"
-              >
-                View Full Schedule
-              </motion.button>
-            </div>
+            
+              <noscript>
+  <a href="https://www.ubmeevents.com/event/be43fcdc-64f4-4743-901c-3a3ee7bfde3a?embed=true" target="_blank" rel="noopener noreferrer">Buy Tickets</a>
+</noscript>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <button
+    onClick={() => {
+      const popup = document.getElementById('popup');
+      if (popup) popup.style.display = 'flex';
+    }}
+    className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-medical-600 transition-all duration-300"
+  >
+    Secure your Spot!
+  </button>
+</div>
+<div
+  id="popup"
+  style={{
+    display: 'none',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+  }}
+  onClick={e => {
+    if (e.target === e.currentTarget) {
+      (e.currentTarget as HTMLDivElement).style.display = 'none';
+    }
+  }}
+>
+  <div
+    style={{
+      position: 'relative',
+      background: '#fff',
+      width: '100%',
+      maxWidth: '850px',
+      zIndex: 10000,
+    }}
+  >
+    <button
+      style={{
+        position: 'absolute',
+        top: 7,
+        right: 7,
+        backgroundColor: 'rgba(248, 247, 250, 0.65)',
+        borderRadius: '50%',
+        border: 'none',
+        cursor: 'pointer',
+        height: '40px',
+        width: '40px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      onClick={e => {
+        (e.currentTarget.closest('#popup') as HTMLDivElement).style.display = 'none';
+      }}
+    >
+      ✕
+    </button>
+    <iframe
+      src="https://www.ubmeevents.com/event/be43fcdc-64f4-4743-901c-3a3ee7bfde3a?embed=true"
+      style={{ width: '100%', height: '600px', border: 'none' }}
+    ></iframe>
+  </div>
+</div>
+            
+            
           </motion.div>
         </div>
       </div>

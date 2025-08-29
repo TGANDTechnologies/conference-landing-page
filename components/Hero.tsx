@@ -161,16 +161,76 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
-            <motion.button
-              type="button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group bg-white text-medical-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 hover:text-medical-700 transition-all duration-300 flex items-center gap-2"
-            >
-              Register Now - Early Bird $299
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            <noscript>
+  <a href="https://www.ubmeevents.com/event/be43fcdc-64f4-4743-901c-3a3ee7bfde3a?embed=true" target="_blank" rel="noopener noreferrer">Buy Tickets</a>
+</noscript>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <button
+    onClick={() => {
+      const popup = document.getElementById('popup');
+      if (popup) popup.style.display = 'flex';
+    }}
+    className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-medical-600 transition-all duration-300"
+  >
+    Register Now! - Early Bird $299
+  </button>
+</div>
+<div
+  id="popup"
+  style={{
+    display: 'none',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+  }}
+  onClick={e => {
+    if (e.target === e.currentTarget) {
+      (e.currentTarget as HTMLDivElement).style.display = 'none';
+    }
+  }}
+>
+  <div
+    style={{
+      position: 'relative',
+      background: '#fff',
+      width: '100%',
+      maxWidth: '850px',
+      zIndex: 10000,
+    }}
+  >
+    <button
+      style={{
+        position: 'absolute',
+        top: 7,
+        right: 7,
+        backgroundColor: 'rgba(248, 247, 250, 0.65)',
+        borderRadius: '50%',
+        border: 'none',
+        cursor: 'pointer',
+        height: '40px',
+        width: '40px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      onClick={e => {
+        (e.currentTarget.closest('#popup') as HTMLDivElement).style.display = 'none';
+      }}
+    >
+      ✕
+    </button>
+    <iframe
+      src="https://www.ubmeevents.com/event/be43fcdc-64f4-4743-901c-3a3ee7bfde3a?embed=true"
+      style={{ width: '100%', height: '600px', border: 'none' }}
+    ></iframe>
+  </div>
+</div>
             <motion.button
               type="button"
               whileHover={{ scale: 1.05 }}
